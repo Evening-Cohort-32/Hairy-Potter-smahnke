@@ -2,22 +2,23 @@
 import {makePottery} from './PotteryWheel.js';
 import {firePottery} from './Kiln.js';
 import { toSellOrNotToSell } from './PotteryCatalog.js';
+import { potteryList } from './PotteryList.js';
 
 
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery("round", 3, 3)
+let mug = makePottery("round", 3, 3, "Mug")
 console.log(mug)
 
-let plate = makePottery("square", 5, 1)
+let plate = makePottery("square", 5, 1, "Plate")
 console.log(plate)
 
-let vase = makePottery("cylinder", 4, 8)
+let vase = makePottery("cylinder", 4, 8, "Vase")
 console.log(vase)
 
-let bowl = makePottery("round", 4, 4)
+let bowl = makePottery("round", 4, 4, "Bowl")
 console.log(bowl)
 
-let planter = makePottery("rectangle", 6, 9)
+let planter = makePottery("rectangle", 6, 9, "Planter")
 console.log(planter)
 
 
@@ -46,3 +47,5 @@ let pricedPlanter = toSellOrNotToSell(firedPlanter);
 
 // Invoke the component function that renders the HTML list
 
+const renderPotteryToDOM = potteryList()
+document.getElementById('potteryList').innerHTML = renderPotteryToDOM
