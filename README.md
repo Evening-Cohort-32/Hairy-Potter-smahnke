@@ -123,7 +123,8 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
    > In the html file, I added an article element with the id attribute "potteryList" to target the area in which I'll display the data. The potteryList function creates a single concatenated html string of pottery objects which are then stored in the "renderPotteryToDom" variable in Main.js. The 'getElementById...innerhtml" then injects the html string of data into the DOM.
    
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/7a95aa83c5f94138bd4139815e6f2ff1)
+   
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
    > Each module has a unique job to pass pottery objects through--these jobs are distinct so that even if the object data changes, it doesn't disrupt the working process. In this case, the makePottery function simply creates the properties of a pottery object (e.g., shape, weight, etc.). Once main.js uses this function to create pottery objects, objects then get passed to the kiln to fire up the pottery, and so on.
    
@@ -131,4 +132,4 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
    > I'd need to modify the toSellOrNotToSell function by removing the early return for cracked pottery and adding the condition "else if (pottery.cracked)" that sets the outcome of pottery.price=2.50. This way the array will then included both cracked and uncracked pottery with their respective prices. The rest of the workflow will continue with the potteryList() pulling the updated array of objects.
    
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/a92793ad13854dd68f008a6bafafec5f)
